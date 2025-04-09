@@ -104,7 +104,8 @@ Follow these steps to set up and run the Django To-Do List API on your local env
 {
   "title": "Buy groceries",
   "description": "Milk, eggs, bread",
-  "completed":false
+  "completed": false,
+  "created_at": "2025-04-08T07:29:24.294938Z"
 }
 ```
 
@@ -116,8 +117,9 @@ Follow these steps to set up and run the Django To-Do List API on your local env
   "data": {
     "id": 1,
     "title": "Buy groceries",
-    "description": "Milk, eggs, bread", 
-     "completed":false
+    "description": "Milk, eggs, bread",
+    "completed": false,
+    "created_at": "2025-04-08T07:29:24.294938Z"
   },
   "errors": "",
   "message": "To-Do item created successfully."
@@ -135,18 +137,21 @@ Follow these steps to set up and run the Django To-Do List API on your local env
       "id": 1,
       "title": "Buy groceries",
       "description": "Milk, eggs, bread",
-       "completed":false
+      "completed": false,
+      "created_at": "2025-04-08T07:29:24.294938Z"
     },
     {
       "id": 2,
       "title": "Read a book",
       "description": "Finish reading The Alchemist",
-       "completed":true
+      "completed": true,
+      "created_at": "2025-05-08T07:29:24.294938Z"
     }
   ],
   "errors": "",
   "message": "To-Do items received successfully."
 }
+
 ````
 ✏️ Update To-Do (PUT /api/v1/todo/details/1/)
 
@@ -155,8 +160,10 @@ Follow these steps to set up and run the Django To-Do List API on your local env
 {
   "title": "Buy groceries and fruits",
   "description": "Milk, eggs, bread, apples",
-   "completed":false
+  "completed": false,
+  "created_at": "2025-04-08T07:29:24.294938Z"
 }
+
 ````
 **Response:**
 ````json
@@ -167,11 +174,13 @@ Follow these steps to set up and run the Django To-Do List API on your local env
     "id": 1,
     "title": "Buy groceries and fruits",
     "description": "Milk, eggs, bread, apples",
-     "completed":false
+    "completed": false,
+    "created_at": "2025-04-08T07:29:24.294938Z"
   },
   "errors": "",
   "message": "To-Do item updated successfully."
 }
+
 ````
 🗑️ Delete To-Do (DELETE /api/v1/todo/details/1/)
 
